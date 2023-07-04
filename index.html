@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <title>Portfolio JoseLS</title>
  </head>
  <body>
     <nav>
-        <div class="logo"><a href=""><img src="" alt="logo JoseLS"></a></div>
+        <div class="logo"><a href=""><img src="img/Coikoioaptura-removebg-preview.webp" alt="logo JoseLS"></a></div>
         <div class="utility">
             <ul>
                 <div>
@@ -33,24 +35,105 @@
     <header>
         <div class="About-me">
             
-                <h1 class="me-description">Hello! I'm José L.S, a passionate programmer with one year of experience and a 6-month internship at GM2 Dev</h1>. <h2>My main focus is working with HTML, CSS, and Java to create efficient and clean solutions </h2>. 
-                <p class="me-description">  I ensure that my code is understandable for all my team members, promoting collaboration and teamwork. <br>
+                <h1 class="me-description">Hello! I'm José L.S, a passionate programmer with one year of experience and a 6-month internship at GM2 Dev</h1>. 
+                <h2>My main focus is working with HTML, CSS, and Java to create efficient and clean solutions </h2>. 
+            <p class="me-description">
+                I ensure that my code is understandable for all my team members, promoting collaboration and teamwork. <br>
                 I am open to all types of projects and collaborations, and I am excited to take on new challenges. I use tools like Visual Studio Code, Github, Shopify, and Trello to optimize my workflow and ensure successful project delivery. <br>
                 At GM2 Dev, I have had the opportunity to develop strong skills and receive valuable recommendations from my colleagues. My goal is to continue growing as a programmer and provide innovative and high-quality solutions for my clients. <br>
                 Feel free to explore my portfolio to see examples of my previous projects and discover how I can add value to your team or project. I am excited to work with you!
-                </p>
+            </p>
+            
             <div class="me-img">
                 <img src="img/me-img.webp" alt="me-face">
             </div>
+
         </div>
     </header>
 
     <main>
-        
+        <section class="Proyects">
+        <h3>My Proyects Jose.LS</h3>
+        <div class="container">
+            <div class="carousel">
+                <input type="radio" id="carousel-1" name="carousel[]" checked>
+                <input type="radio" id="carousel-2" name="carousel[]">
+             <input type="radio" id="carousel-3" name="carousel[]">
+                <input type="radio" id="carousel-4" name="carousel[]">
+                <input type="radio" id="carousel-5" name="carousel[]">
+                <ul class="carousel__items">
+                    <li class="carousel__item"><img src="//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG" alt=""></li>
+                    <li class="carousel__item"><img src="//lh4.googleusercontent.com/-ntVHbbWX5eo/U8-EmV8P4cI/AAAAAAAABc4/ICYBGkcztTc/w1358-h905-no/carousel-2.jpg" alt=""></li>
+                    <li class="carousel__item"><img src="//lh5.googleusercontent.com/-batEXUZE_e4/U8-EmLF9-hI/AAAAAAAABc0/J3tJVUa6Buk/w1358-h905-no/carousel-3.jpg" alt=""></li>
+                    <li class="carousel__item"><img src="//lh5.googleusercontent.com/-gywqIeMvel0/U8-EolKdtkI/AAAAAAAABdM/G0-NHuvvJUU/w1358-h905-no/carousel-4.jpg" alt=""></li>
+                    <li class="carousel__item"><img src="//lh5.googleusercontent.com/--2iANjL3ikc/U8-EoGJ18mI/AAAAAAAABdI/fBe-q3Gos6Y/w1358-h905-no/carousel-5.jpg" alt=""></li>
+                </ul>
+             <div class="carousel__prev">
+                 <label for="carousel-1"></label>
+                 <label for="carousel-2"></label>
+                 <label for="carousel-3"></label>
+                 <label for="carousel-4"></label>
+                 <label for="carousel-5"></label>
+             </div>
+             <div class="carousel__next">
+               <label for="carousel-1"></label>
+               <label for="carousel-2"></label>
+               <label for="carousel-3"></label>
+               <label for="carousel-4"></label>
+               <label for="carousel-5"></label>
+             </div>
+             <div class="carousel__nav">
+               <label for="carousel-1"></label>
+               <label for="carousel-2"></label>
+               <label for="carousel-3"></label>
+               <label for="carousel-4"></label>
+               <label for="carousel-5"></label>
+             </div>
+           </div>
+         </div>
+        </section> 
+
+        <section class="contact">
+            <h4>Contact Me</h4>
+            <form action="contact">
+                <ul>
+                    <li>
+                        <label for="name">Name: </label>
+                        <input type="text" name="name" id="name">
+                    </li>
+                        <label for="mail">Email: </label>
+                        <input type="email" name="mail" id="mail">                    
+                    <li>
+                        <label for="cell-phone">Cell phone:</label>
+                        <input type="number" name="cell-phone" id="cell-phone">
+                    </li>
+                    <li>
+                        <label for="message">Your message: </label>
+                        <input type="text" name="message" id="message">
+                    </li>
+                </ul>
+            </form>
+        </section>
     </main>
 
     <footer>
-
+        <div class="Socials">
+            
+            <ul>
+                <li>
+                    <box-icon type='logo' name='linkedin-square'></box-icon>
+                    <a href="">Linkedin</a>
+                </li>
+                <li>
+                    <box-icon type='logo' name='github'></box-icon>
+                    <a href="">Github</a>
+                </li>
+                <li>
+                    <box-icon type='logo' name='gmail'></box-icon>
+                    <a href="">Gmail</a>
+                </li>
+            </ul>
+        </div>
     </footer>    
 </body>
  </html>
