@@ -1,0 +1,27 @@
+.utility{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 3px 5px 5px rgb(0, 0, 0.4);
+}
+.logo{
+    width: 90px;
+    height: 10vh;
+    display: flex;
+    
+}
+
+ul, li {
+    list-style: none;
+    display: flex;
+    padding: 1em;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
