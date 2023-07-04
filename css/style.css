@@ -1,27 +1,101 @@
-.utility{
-    margin: 0;
+/*ajustando parametros en 0*/
+*{  
     padding: 0;
-    width: 100vw;
-    height: 10vh;
-    background-color: black;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: 3px 5px 5px rgb(0, 0, 0.4);
-}
-.logo{
-    width: 90px;
-    height: 10vh;
-    display: flex;
-    
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box; /*para que los elementos no se salgan del contenedor*/
 }
 
-ul, li {
-    list-style: none;
-    display: flex;
-    padding: 1em;
-    margin: 0;
-    justify-content: space-between;
-    align-items: center;
+nav{
+    background: rgba(41,43,54,255);
+    height: 80px ;
+    width: 100%;
+
+}
+
+.up-link{
+    position: absolute;
+    padding: 20px 50px;
+}
+
+.logo{
+    height: 40px;
+}
+
+nav ul {
+    float: right;
+    margin-right:20px ;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: rgba(82,127,228,255);
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+li a.active, li a:hover {
+    background: #3a4459;
+    transition: 1s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-widht: 952px){
+    .up-link{
+        padding-left: 20px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+@media(max-widht:856px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100uvh;
+        background: #3a4459 ;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #537be2;
+    } 
+    #check:checked ~ ul {
+        left:0;
+    }
+
 }
