@@ -108,11 +108,11 @@ h1 span{
         -webkit-background-clip: text;
         color: transparent;
         background-image: linear-gradient(to left, #5ca7d4, #8a58c2); 
-        transition: 1.5;
+        transition: 0.7s;
 }
 
 h1 span:hover{
-    transition: 0.5s;
+    transition: 0.7s;
     font-size: 42px;
     cursor: pointer;
 }
@@ -177,8 +177,32 @@ main {
 h3{
     text-align: center;
     padding-top: 5%;
-    font-size: 2rem ;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.7s;
 }
+h3::after{
+    content: "";
+    width: 0%;
+    height: 3px;
+    background: #5ca7d4;
+    display: block;
+    transition: 0.7s;
+    margin: auto;
+    
+}
+
+h3:hover{
+
+    font-size: 38px;
+}
+
+h3:hover::after{
+    width: 20%;
+
+}
+  
 
 
 .slider{
