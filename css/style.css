@@ -13,14 +13,14 @@ body*/
 
 /*AYUDAAAAAAAAAA*/
 nav{
-    background-color: rgba(41,43,54,255);
+    background-color: #18202f;
     height: 80px ;
     width: 100%;
     box-sizing: border-box;
-    box-shadow: 0px 17px 59px 11px rgba(41,43,54,255) ;
+    box-shadow: 0px 17px 59px 11px #18202f ;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 99;
 }
 
 .up-link{
@@ -77,13 +77,12 @@ li a:hover {
 header{
     background-color: rgba(41,43,54,255);
     box-sizing: border-box;
-
+    box-shadow: 0px 0px 40px #474F76 inset;
 }
 #About-me{
     display: flex;
     justify-content: space-around;
-    margin-left: 2%;
-    margin-top: 3%;
+    margin-left: 5%;
 
 }
 
@@ -95,15 +94,16 @@ h1,h2{
 h1{
     
     color: #f5f5f5;
-    margin-top: 15%;
+    margin-top: 20%;
     text-transform: uppercase;
+    font-size: 46px;
     
 }
 
 h2{
     
     font-size: 18px;
-    color: #cac6c6;
+    color: #828996;
 }
 
 h1 span{
@@ -121,7 +121,7 @@ h1 span:hover{
 }
 
 .description-me{
-    margin-left: 2%;
+    margin-left: 5%;
     margin-top: 2%;
 }
 
@@ -130,8 +130,10 @@ h1 span:hover{
 }/* AGREGAR O HACER ALGOOO*/
 
 main {
-    background: linear-gradient(to bottom, rgba(51, 65, 92), rgba(125, 133, 151) );
+    background: linear-gradient(to bottom, #3C4D67,#3c4d67ee );
     color: white;
+    padding-top:4% ;
+
   }
 
 .me{
@@ -141,8 +143,15 @@ main {
 }
 
 #about{
-    box-shadow: 100px 0px 110px 00px rgba(0, 72, 255, 0.748);
-    overflow: auto;
+    box-shadow: 36px 18px 40px 9px #737cab;
+    -webkit-box-shadow: 36px 18px 40px 9px #737cab;
+    -moz-box-shadow: 36px 18px 40px 9px #3C4D67;        /*HACER UN HOVER PARA EL BRILLO*/
+    width: 80%;
+    margin: 0% 10% ;
+    background:linear-gradient(to top,#41526bda,   #45597585 );
+    display: grid;
+    place-content: center;
+    border-radius: 2% ;
 }
 .title-am{
     position: relative;
@@ -173,19 +182,22 @@ main {
     width: 10%;
 
 }
-  
+
+.me-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 .text-am{
-    padding: 2% 2%;
+    padding: 2% 5% 0% 5%;
     font-size: 20px;
-    width: 50%;
-    margin-right: 0;
-    float: left;
+    width:90%;
+    color: azure;
+    position: relative;
     text-align: justify;
-    border-right: 1px dashed black;
 }  
-.text-am:first-child{
-    border-right: 1px dashed black;
-}  
+
 h3{
     text-align: center;
     padding-top: 5%;
@@ -218,7 +230,6 @@ h3:hover::after{
 /*
     CODIGO EXPERIMENTALLLLL AHHHHHHHHHHHHHHHHHHH
 */
-
 .container
 {
     position: relative;
@@ -228,18 +239,23 @@ h3:hover::after{
     flex-wrap: wrap;
     padding: 60px 0;
     gap: 60px;
+
 }
-.container .box
-{
+.container .box {
     position: relative;
     width: 300px;
     height: 350px;
-    background: rgba(41,43,54,255);
+    background:#1f1f20;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999483893493993;!important/*EDITAARR*/
+    z-index: 1;
+
+
+    
+
 }
+
 .container .box::before
 {
     content: '';
@@ -247,7 +263,7 @@ h3:hover::after{
     inset: -10px 50px;
     border-top: 4px solid var(--clr);
     border-bottom: 4px solid var(--clr);
-    z-index: 1;
+    z-index: -1;
     transform: skewY(15deg);
     transition: 0.5s ease-in-out;
 }
@@ -255,6 +271,7 @@ h3:hover::after{
 {
     transform: skewY(0deg);
     inset: -10px 40px;
+    z-index: 3;
 }
 .container .box::after
 {
@@ -263,7 +280,7 @@ h3:hover::after{
     inset: 60px -10px;
     border-left: 4px solid var(--clr);
     border-right: 4px solid var(--clr);
-    z-index: 1;
+    z-index: -1;
     transform: skew(15deg);
     transition: 0.5s ease-in-out;
 }
@@ -271,6 +288,9 @@ h3:hover::after{
 {
     transform: skew(0deg);
     inset: 40px -10px;
+    box-shadow: -3px 36px 25px 17px rgba(104, 122, 221, 0.75);
+    -webkit-box-shadow: -3px 36px 25px 17px rgba(104, 122, 221, 0.75);
+    -moz-box-shadow: -3px 36px 25px 17px rgba(104, 122, 221, 0.75);
 }
 .container .box .content
 {
@@ -343,7 +363,6 @@ h3:hover::after{
     color: var(--clr);
 }
 
-
 /*ahhhhHHHAHSAHSGHAGHAHHASHJSHDJASHDSHJHJSHDSGHSJGDHSJGHJSDGHDS*/
 .slider{
     width: 90%;
@@ -378,8 +397,8 @@ h3:hover::after{
       75%{margin-left: -300%;}
       100%{margin-left: -300%;}
   }
-  @media only screen and (min-width:320px) and (max-width:768px){
-  .slider, .slider ul, .slider img{
+    @media only screen and (min-width:320px) and (max-width:768px){
+    .slider, .slider ul, .slider img{
       height: 100vh;
   }
   }
