@@ -341,14 +341,14 @@ h3:hover::after{
     color: #2e2e2e;
     box-shadow: 0 0 0 4px #2e2e2e,0 0 0 300px var(--clr);
 }
-.container .box .content .text h3
+.container .box .content .text .title-skills
 {
     font-size: 1.5em;
     color: #fff;
     font-weight: 500;
     transition: 0.5s ease-in-out;
 }
-.container .box:hover .content .text h3
+.container .box:hover .content .text .title-skills
 {
     color: #2e2e2e;
 }
